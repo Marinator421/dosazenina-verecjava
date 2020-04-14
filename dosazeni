@@ -1,0 +1,23 @@
+Scanner sc = new Scanner(System.in, "Windows-1250");
+        System.out.println("Uvažujme rovnici jako: ax² + bx + c = 0");
+        System.out.println("Zadejte člen a.");
+        double a = sc.nextDouble();
+        System.out.println("Zadejte člen b.");
+        double b = sc.nextDouble();
+        System.out.println("Zadejte člen c.");
+        double c = sc.nextDouble();
+        b = (b / a) / 2;
+        c = c - (b * b * a);
+        if (a == 1) {
+            if (c == 0) {
+                System.out.println("(x + " + b + ")²");
+            } else {
+                System.out.println("(x + " + b + ")² + " + c);
+            }
+        } else {
+            if (c == 0) {
+                System.out.println(a + "*(x + " + b + ")²");
+            } else {
+                System.out.println(a + "*(x + " + b + ")² + " + c);
+            }
+        }
